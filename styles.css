@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+html {
+    background-color: #F5F5F5;
+   
+}
+
+/*1 rem 16 px*/
+
+.container-header, .container-main, .container-footer{
+
+    font-family: 'Raleway', sans-serif;  
+}
+
+
+.container-header {
+
+    width: 75%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;    
+}
+
+.menu-principal {
+
+    margin-left:auto;
+    display:flex;
+    gap:1rem;
+ }
+
+.nombre::before {
+     
+    content: "Laureano Neyén Chaves";
+}
+
+.nombre-header {
+
+    display:flex;
+     align-items: center;
+    gap:0.5rem;
+}
+
+.nombre {
+    
+    font-size:1rem;
+}
+
+.nav-text {
+
+    text-decoration: none;
+}
