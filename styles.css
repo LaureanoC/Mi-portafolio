@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 html {
     background-color: #F5F5F5;
    
@@ -14,9 +15,10 @@ html {
 
 .container-header {
 
-    width: 75%;
+    width: 65%;
     max-width: 1920px;
     margin: 0 auto;
+    margin-top: 1rem;
     padding: 1rem;
     display: flex;
     align-items: center;    
@@ -49,4 +51,75 @@ html {
 .nav-text {
 
     text-decoration: none;
+    color:black;
 }
+
+
+
+.nav-text:visited {
+
+    color:black;
+
+}
+
+.container-main {
+
+    width: 65%;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow:column wrap;
+        
+}
+
+.container-titulo {
+    display:flex;
+    margin: 3rem auto;
+    align-items: center;
+    justify-content:center;
+     
+}
+
+.container-titulo h1 {
+
+    font-size:3.25rem;
+    color:#464646;
+    font-weight: 800;
+
+}
+
+.foto-perfil {
+
+    width: 20rem;
+    height: 20rem;
+    border-radius:20rem;
+
+    }
+
+.parrafo-perfil {
+
+    font-size: 1.375rem;
+    font-weight: 400;
+
+}
+
+.container-redes {
+
+    display:flex;
+    gap:1rem;
+}
+
+.container-descripcion {
+
+    display:flex;
+    flex-direction: column;
+    gap:2.5rem;
+}
+
+
+.container-acerca-de-mi {
+
+    background-color: #EAF2FD;
+}
+
+

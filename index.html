@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    
     <header class="container-header">
 
         <div class="nombre-header">
@@ -19,7 +20,7 @@
         </div>
 
         <nav class="menu-principal">
-            <a class ="nav-text" href="#sobre-mi">Sobre mi</a>
+            <a class ="nav-text" href="#sobre-mi">Sobre mí</a>
             <a class ="nav-text" href="#skills">Skills</a>
             <a class ="nav-text" href="#hobbies">Hobbies</a>
             <a class ="nav-text" href="#formacion">Formación</a>
@@ -31,12 +32,27 @@
 
     <main class="container-main">
 
-        <h1>Hola mi nombre es Laureano Chaves y construyo páginas web</h1>
-
-        <section name="sobre-mi" class="container-acerca-de-mi">
+        <div class="container-titulo">
+            <div class="container-descripcion">
+                <h1>Hola, mi nombre es Laureano Neyén Chaves y construyo páginas web</h1>
+                <p class="parrafo-perfil">Soy estudiante universitario y actualmente estoy participando del proyecto Oracle ONE en Alura Latam</p>
+                <nav class="container-redes">
+                    <a class="nav-text" href="https://github.com/LaureanoC" target="_blank">Github <i class="fa-solid fa-code"></i></a>
+                    <a class="nav-text" href="https://www.linkedin.com/in/laureano-neyén-chaves/"target="_blank" >LinkedIn <i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="nav-text" href="https://www.instagram.com/laureano.chaves/" target="_blank">Instagram <i class="fa-brands fa-instagram"></i></a>
+                    <a class="nav-text" href="">Curriculum <i class="fa-solid fa-file-lines"></i></a>
+                </nav>
+            </div>
+            <img class="foto-perfil" src="img/perfil.jpeg">
+        </div>
+    </main>
+        
+        <a name="sobre-mi"></a>
+        <section  class="container-acerca-de-mi">
             <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id omnis esse tenetur accusantium optio tempora, aliquam itaque quia exercitationem impedit provident sequi laudantium iure odio hic ad in officiis nisi.</p>
         </section>
 
+        <a name="skills"></a>
         <section name="skills" class="container-skills">
             <p class="section-title">Skills <i class="fa-solid fa-code"></i></p>
             <i class="fa-brands fa-js-square"></i>
@@ -44,18 +60,22 @@
             <i class="fa-brands fa-css3-alt"></i>
         </section>
 
+        <a name="hobbies"></a>
         <section name="hobbies" class="container-name">
             <p>aca van los Hobbies</p>
         </section>
 
+        <a name="formacion"></a>
         <section name="formacion" class="container-formacion">
             <p>aca va la formación</p>
         </section>
 
+        <a name="proyectos"></a>
         <section name ="proyectos" class="container-proyectos">
 
         </section>
 
+        <a name="contacto"></a>
         <section name="contacto" class="container-contacto">
 
             <form>
@@ -72,7 +92,6 @@
             
         </section>
 
-    </main>
     
 
     <footer class="container-footer">
