@@ -8,7 +8,7 @@ html {
 
 /*1 rem 16 px*/
 
-.container-header, .container-main, .container-footer, .container-sobre-mi, .container-skills, .container-hobbies, .container-formacion{
+.container-header, .container-main, .container-footer, .container-sobre-mi, .container-skills, .container-hobbies, .container-formacion, .container-proyectos{
 
     font-family: 'Raleway', sans-serif;
     color:#464646;  
@@ -73,7 +73,7 @@ html {
 
 }
 
-.container-main, .seccion-sobre-mi, .container-skills, .container-hobbies, .seccion-formacion {
+.container-main, .seccion-sobre-mi, .container-skills, .container-hobbies, .seccion-formacion, .container-proyectos {
 
     width: 65%;
     max-width: 1920px;
@@ -143,6 +143,12 @@ html {
     margin-bottom: 1rem;
 }
 
+.subtitulo2 {
+
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
 .subtitulo i {
 
 
@@ -161,7 +167,7 @@ html {
 
 } 
 
-.container-skills .subtitulo, .container-hobbies .subtitulo, .container-formacion .subtitulo {
+.container-skills .subtitulo, .container-hobbies .subtitulo, .container-formacion .subtitulo, .container-proyectos .subtitulo {
 
     text-align: center;
     padding:2rem;
@@ -183,7 +189,6 @@ html {
 .cuadrado-descripcion {
 
     font-size:1rem;
-   
     color:#464646;
     font-weight: 700;
     margin: 0.5rem 0;
@@ -217,3 +222,65 @@ html {
     flex-basis:50%;
 }
 
+.imagen-proyecto {
+
+    width:47rem;
+    height: 25.375rem;
+}
+
+.conjunto-imagen-botones {
+
+    display:flex;
+    gap:1rem;
+    align-items: center;
+    padding: 2rem 0;
+    
+}
+
+.conjunto-titulo-descripcion-botones {
+
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.subtitulo2 {
+
+    flex-basis: 100%;
+}
+
+.descripcion-subtitulo2 {
+
+    margin-bottom:1.7rem;
+}
+
+.boton-repositorio {
+
+    cursor:pointer;
+    border: solid 0.15rem #2a7ae4;
+    padding:0.6rem;
+    font-size:1.4rem;
+    color:#2A7AE4;
+    text-decoration: none;
+   
+}
+
+.boton-ver {
+
+    cursor:pointer;
+    border: solid 0.15rem #2a7ae4;
+    padding:0.6rem;
+    font-size:1.4rem;
+    color:whitesmoke;
+    background-color:#2A7AE4;
+    text-decoration: none;
+}
+
+
+
+.conjunto-botones {
+
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+}
