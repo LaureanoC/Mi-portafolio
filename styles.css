@@ -404,30 +404,37 @@ border-radius:0.5rem;
    
 }
 
-@media (min-width:500px) and (max-width:900px) {
+@media (min-width:500px) and (max-width:768px) {
 
        
-
     html {
-                    font-size:0.65rem;
+
+        font-size:8px;
     }
 
-    .container-main, .container-boton{
 
-    width: 60%;
+      .container-main, .seccion-sobre-mi, .container-skills, .container-hobbies, .seccion-formacion, .container-proyectos, .container-footer {
+
+        width:90%;
+
     }
+    
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 360px) {
 
-    html {
-                    font-size: 60%;
+     html {
 
+        font-size:4px;
     }
 
-    .container-main, .container-boton{
 
-    width: 60%;
+      .container-main, .seccion-sobre-mi, .container-skills, .container-hobbies, .seccion-formacion, .container-proyectos, .container-footer {
+
+        width:90%;
+
     }
+  
+
 }
