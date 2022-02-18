@@ -409,7 +409,7 @@ border-radius:0.5rem;
        
     html {
 
-        font-size:9px;
+        font-size:8px;
     }
 
 
@@ -426,7 +426,7 @@ border-radius:0.5rem;
 
      html {
 
-        font-size:8px;
+        font-size:6px;
     }
 
 
@@ -455,7 +455,7 @@ border-radius:0.5rem;
   
     .imagen-proyecto{
 
-        flex-basis:100%;
+        width:100%;
     }
 
     .conjunto-titulo-descripcion-botones {
@@ -489,7 +489,7 @@ border-radius:0.5rem;
 
     .nombre {
 
-        font-size:1.4rem;
+        font-size:0;
 
     }
 
