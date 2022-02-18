@@ -426,7 +426,7 @@ border-radius:0.5rem;
 
      html {
 
-        font-size:4px;
+        font-size:6px;
     }
 
 
@@ -435,6 +435,32 @@ border-radius:0.5rem;
         width:90%;
 
     }
-  
 
+    .parrafo-perfil {
+
+        font-size:1.5rem;
+        line-height:2rem;
+    }
+    .biografia {
+
+        font-size:1.4rem;
+        line-height:2rem;
+    }
+
+    .conjunto-imagen-botones {
+
+        flex-flow: wrap;
+
+    }
+  
+    .imagen-proyecto{
+
+        flex-basis:100%;
+    }
+
+    .conjunto-titulo-descripcion-botones {
+
+        flex-basis:100%;
+        order:2;
+    }
 }
