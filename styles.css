@@ -404,7 +404,7 @@ border-radius:0.5rem;
    
 }
 
-@media (min-width:500px) and (max-width:768px) {
+@media (min-width:451px) and (max-width:768px) {
 
        
     html {
@@ -432,7 +432,7 @@ border-radius:0.5rem;
 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
 
      html {
 
