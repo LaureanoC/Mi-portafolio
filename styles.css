@@ -473,7 +473,13 @@ border-radius:0.5rem;
 
     .container-header {
 
-        font-size:1.4rem;
+        font-size:1.09rem;
+        margin:0;
+    }
+
+    .container-main{
+
+        margin: 5rem auto;
     }
 
     .menu-principal{
@@ -484,11 +490,14 @@ border-radius:0.5rem;
     .nombre {
 
         font-size:1.4rem;
+
     }
 
     .nombre-header i {
 
         font-size:3rem;
+
 }
+   
 
 }
