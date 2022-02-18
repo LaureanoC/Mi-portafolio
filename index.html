@@ -154,26 +154,44 @@
         </section>
 
         <a name="contacto"></a>
-        <section name="contacto" class="container-contacto">
+        <div class="fondo-formulario-contacto">
+            <section name="contacto" class="container-contacto">
+                <img class="imagen-formulario" src="img/contacto.png">
+                <div class="conjunto-formulario">
+                    <h2 class="subtitulo2">Contacto</h2>
+                    <p class="biografia">¿Quieres contactarme?</p>
+                    <p class="biografia">Complete el siguiente formulario y me pondré en contacto lo antes posible</p>
+                    <form action="https://formspree.io/f/xoqrdnpn" method="POST">
 
-            <form>
-                <label for="nombreapellido">Nombre y Apellido</label>
-                <input type="text" id="nombre-apellido" class="input-form" placeholder="Bill Gates"required>
-                <label for="email">Correo</label>
-                <input type="email" id="email" class="input-form" placeholder="ejemplo@gmail.com" required>
-                <label for="asunto">Asunto</label>
-                <input type="text" id="asunto" class="input-form" placeholder="Solicitud de..." required>
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" class="mensaje-form"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-            
-        </section>
+                        <div class="grupo-form">
+                            <label  class="label" for="nombreapellido">Nombre y Apellido</label>
+                            <input type="text" name="nombre" id="nombre-apellido" class="input-form" placeholder="Nombre y Apellido" autocomplete="off" required>
+                        </div>  
 
+                        <div class="grupo-form">
+                            <label class="label" for="email">E-mail</label>
+                            <input type="email" name="email" id="email" class="input-form" placeholder="Correo electrónico" autocomplete="off" required>
+                        </div>
+                        <div class="grupo-form">
+                            <label class="label" for="asunto">Asunto</label>
+                            <input type="text" name="asunto" id="asunto" class="input-form" placeholder="Asunto" autocomplete="off" required>
+                        </div>
+                        
+                        <div class="grupo-form">
+                            <label class="label" for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="mensaje-form"></textarea>
+                        </div>
+                        <button class="boton-enviar" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
     
-
-    <footer class="container-footer">
-        <p class="footer-text">Desarrollado por Laureano Chaves 2022</p>
+        
+    <footer class="fondo-footer">
+        <div class="container-footer">
+            <p class="footer-text">Desarrollado por Laureano Chaves 2022</p>
+        </div>
     </footer>
 </body>
 
