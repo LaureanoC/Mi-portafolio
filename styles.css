@@ -403,3 +403,31 @@ border-radius:0.5rem;
     font-size: 1.5rem;
    
 }
+
+@media (min-width:500px) and (max-width:900px) {
+
+       
+
+    html {
+                    font-size:0.65rem;
+    }
+
+    .container-main, .container-boton{
+
+    width: 60%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    html {
+                    font-size: 60%;
+
+    }
+
+    .container-main, .container-boton{
+
+    width: 60%;
+    }
+}
