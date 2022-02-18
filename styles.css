@@ -8,7 +8,7 @@ html {
 
 /*1 rem 16 px*/
 
-.container-header, .container-main, .container-footer, .container-sobre-mi, .container-skills{
+.container-header, .container-main, .container-footer, .container-sobre-mi, .container-skills, .container-hobbies{
 
     font-family: 'Raleway', sans-serif;
     color:#464646;  
@@ -66,7 +66,7 @@ html {
 
 }
 
-.container-main, .seccion-sobre-mi, .container-skills {
+.container-main, .seccion-sobre-mi, .container-skills, .container-hobbies {
 
     width: 65%;
     max-width: 1920px;
@@ -135,11 +135,52 @@ html {
     margin-bottom: 1rem;
 }
 
+.subtitulo i {
+
+
+    margin-left:0.7rem;
+}
+
 .biografia {
 
     line-height: 1.17375rem;
 }
 
+.conjunto-skills, .conjunto-hobbies {
+
+    display:flex;
+    gap:1rem;
+
+} 
+
+.container-skills .subtitulo, .container-hobbies .subtitulo {
+
+    text-align: center;
+    padding:2rem;
+    margin: 0;
+
+}
+.cuadrado{
+ 
+    background-color:white;
+    flex-basis:50%;
+    padding: 1rem 0;
+    font-size:4rem;
+    color: #2A7AE4;
+    text-align:center;
+    border-radius: 1rem;
+
+}
+
+.cuadrado-descripcion {
+
+    font-size:1rem;
+    text-align:center;
+    color:#464646;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    
+}
     
 
 
