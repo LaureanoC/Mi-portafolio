@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 html {
     background-color: #F5F5F5;
    
@@ -7,9 +8,10 @@ html {
 
 /*1 rem 16 px*/
 
-.container-header, .container-main, .container-footer{
+.container-header, .container-main, .container-footer, .container-sobre-mi{
 
-    font-family: 'Raleway', sans-serif;  
+    font-family: 'Raleway', sans-serif;
+    color:#464646;  
 }
 
 
@@ -33,13 +35,14 @@ html {
 
 .nombre::before {
      
+    font-weight: 500;
     content: "Laureano Neyén Chaves";
 }
 
 .nombre-header {
 
     display:flex;
-     align-items: center;
+    align-items: center;
     gap:0.5rem;
 }
 
@@ -51,18 +54,19 @@ html {
 .nav-text {
 
     text-decoration: none;
-    color:black;
+    font-weight: 500;
+    
 }
 
 
 
 .nav-text:visited {
 
-    color:black;
+    color:#464646;
 
 }
 
-.container-main {
+.container-main, .seccion-sobre-mi {
 
     width: 65%;
     max-width: 1920px;
@@ -83,7 +87,7 @@ html {
 .container-titulo h1 {
 
     font-size:3.25rem;
-    color:#464646;
+    line-height:3.815625rem;
     font-weight: 800;
 
 }
@@ -99,6 +103,7 @@ html {
 .parrafo-perfil {
 
     font-size: 1.375rem;
+    line-height: 1.614375rem;
     font-weight: 400;
 
 }
@@ -117,9 +122,24 @@ html {
 }
 
 
-.container-acerca-de-mi {
+.container-sobre-mi {
 
+    padding:4rem;
     background-color: #EAF2FD;
 }
+
+.subtitulo {
+
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.biografia {
+
+    line-height: 1.17375rem;
+}
+
+    
 
 
