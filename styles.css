@@ -8,7 +8,7 @@ html {
 
 /*1 rem 16 px*/
 
-.container-header, .container-main, .container-footer, .container-sobre-mi{
+.container-header, .container-main, .container-footer, .container-sobre-mi, .container-skills{
 
     font-family: 'Raleway', sans-serif;
     color:#464646;  
@@ -66,7 +66,7 @@ html {
 
 }
 
-.container-main, .seccion-sobre-mi {
+.container-main, .seccion-sobre-mi, .container-skills {
 
     width: 65%;
     max-width: 1920px;
