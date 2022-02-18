@@ -448,19 +448,35 @@ border-radius:0.5rem;
 
     .parrafo-perfil {
 
-        font-size:1.5rem;
-        line-height:2rem;
+        font-size:2rem;
+        line-height:2.5rem;
     }
     .biografia {
 
-        font-size:1.4rem;
-        line-height:2rem;
+        font-size:1.8rem;
+        line-height:2.5rem;
+    }
+
+    .container-descripcion h1 {
+
+        font-size:3rem;
     }
 
     .conjunto-imagen-botones {
 
         flex-flow: wrap;
 
+    }
+
+    .cuadrado-descripcion, .descripcion-subtitulo2{
+
+        font-size:1.35rem;
+    }
+
+    .fecha {
+
+        font-size:1.2rem;
+        line-height:1.9rem;
     }
   
     .imagen-proyecto{
@@ -474,6 +490,14 @@ border-radius:0.5rem;
         order:2;
     }
 
+    .boton-ver, .boton-enviar, .boton-repositorio {
+
+
+        font-size:1.45rem;
+    }
+
+
+
   
   .imagen-formulario {
 
@@ -483,8 +507,10 @@ border-radius:0.5rem;
 
     .container-header {
 
-        font-size:1.09rem;
-        margin:0;
+        width:90%;
+        font-size:1.1rem;
+        margin:1auto;
+
     }
 
     .container-main{
