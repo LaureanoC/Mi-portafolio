@@ -8,7 +8,7 @@ html {
 
 /*1 rem 16 px*/
 
-.container-header, .container-main, .container-footer, .container-sobre-mi, .container-skills, .container-hobbies{
+.container-header, .container-main, .container-footer, .container-sobre-mi, .container-skills, .container-hobbies, .container-formacion{
 
     font-family: 'Raleway', sans-serif;
     color:#464646;  
@@ -66,7 +66,7 @@ html {
 
 }
 
-.container-main, .seccion-sobre-mi, .container-skills, .container-hobbies {
+.container-main, .seccion-sobre-mi, .container-skills, .container-hobbies, .conjunto-formacion {
 
     width: 65%;
     max-width: 1920px;
@@ -153,7 +153,7 @@ html {
 
 } 
 
-.container-skills .subtitulo, .container-hobbies .subtitulo {
+.container-skills .subtitulo, .container-hobbies .subtitulo, .conjunto-formacion .subtitulo {
 
     text-align: center;
     padding:2rem;
@@ -181,6 +181,12 @@ html {
     margin: 0.5rem 0;
     
 }
-    
 
+.container-formacion {
+
+    display: flex;
+    background-color: #EAF2FD;
+    margin-top: 3rem;
+    
+}
 
