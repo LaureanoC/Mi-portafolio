@@ -463,4 +463,32 @@ border-radius:0.5rem;
         flex-basis:100%;
         order:2;
     }
+
+  
+  .imagen-formulario {
+
+      display:none;
+  }
+
+
+    .container-header {
+
+        font-size:1.4rem;
+    }
+
+    .menu-principal{
+
+        margin-left:2rem;
+    }
+
+    .nombre {
+
+        font-size:1.4rem;
+    }
+
+    .nombre-header i {
+
+        font-size:3rem;
+}
+
 }
