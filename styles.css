@@ -67,7 +67,7 @@ html {
 
 }
 
-.container-main, .seccion-sobre-mi, .container-skills, .container-hobbies, .conjunto-formacion {
+.container-main, .seccion-sobre-mi, .container-skills, .container-hobbies, .seccion-formacion {
 
     width: 65%;
     max-width: 1920px;
@@ -154,7 +154,7 @@ html {
 
 } 
 
-.container-skills .subtitulo, .container-hobbies .subtitulo, .conjunto-formacion .subtitulo {
+.container-skills .subtitulo, .container-hobbies .subtitulo, .container-formacion .subtitulo {
 
     text-align: center;
     padding:2rem;
@@ -176,7 +176,7 @@ html {
 .cuadrado-descripcion {
 
     font-size:1rem;
-    text-align:center;
+   
     color:#464646;
     font-weight: 700;
     margin: 0.5rem 0;
@@ -185,9 +185,28 @@ html {
 
 .container-formacion {
 
-    display: flex;
+   
     background-color: #EAF2FD;
+    padding:2rem 0;
     margin-top: 3rem;
     
+}
+
+.conjunto-formacion {
+
+    display: flex;
+    flex-flow: 1 0;
+    gap:1rem;
+}
+
+.logo {
+    
+    width:12rem;
+    height:8.125rem;
+}
+
+.cuadrado-texto {
+
+    flex-basis:50%;
 }
 
