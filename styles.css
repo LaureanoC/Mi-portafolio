@@ -285,13 +285,15 @@ html {
     color:whitesmoke;
     background-color:#372AE4;
     border-color: #372AE4;
-    
+    transition:1s;
 }
 
 .boton-repositorio:hover {
 
     border-color: #372AE4;
     color:#372AE4;
+    transition:1s;
+
 
 }
 
