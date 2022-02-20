@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 html {
     background-color: #F5F5F5;
+    scroll-behavior: smooth;
    
 }
 
@@ -405,6 +406,8 @@ border-radius:0.5rem;
     font-size: 1.5rem;
    
 }
+
+
 
 @media (min-width:451px) and (max-width:768px) {
 
