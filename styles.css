@@ -4,16 +4,14 @@
 html {
     background-color: #F5F5F5;
     scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    color:#464646;  
    
 }
 
 /*1 rem 16 px*/
 
-.container-header, .container-main, .container-footer, .container-sobre-mi, .container-skills, .container-hobbies, .container-formacion, .container-proyectos, .container-contacto{
 
-    font-family: 'Raleway', sans-serif;
-    color:#464646;  
-}
 
 .sticky {
     position: fixed;
