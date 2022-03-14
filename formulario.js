@@ -1,6 +1,18 @@
-function validarLongitud(palabra) {
+class Error {
+    constructor() {
+        this.vacio = false;
+        this.longitud = false;
+    }
+}
 
-    if (palabra.length <= 50) {
+var nombreError = new Error();
+var asuntoError = new Error();
+var mensajeError = new Error();
+
+
+function validarLongitud(palabra,n) {
+
+    if (palabra.length <= n) {
 
         return true
 
@@ -10,6 +22,8 @@ function validarLongitud(palabra) {
         return false
     }
 }
+
+
 
 function validarVacio(palabra) {
 
@@ -23,32 +37,39 @@ function validarVacio(palabra) {
     }
 }
 
-function mostrarTextoError(campo, texto) {
+function mostrarTextoErrorVacio(campo,id) {
 
-    if (validarVacio(texto)) {
+    crearElementoError(campo, `El campo ${campo} no puede estar vacío`,id);
 
-        console.log(`El campo ${campo} se encuentra vacío`);
-    }
-
-    else if (validarLongitud(texto) == false) {
-
-        console.log(`El campo ${campo} no puede superar los 50 caracteres`);
-
-    }
 }
 
-var nombre = document.querySelector("#nombre-apellido");
+function mostrarTextoErrorLongitud(campo,id,n) {
 
-nombre.addEventListener("keyup", function(){
- 
-    
-    console.log(`Contenido del nombre: ${nombre.value} `);
+    crearElementoError(campo, `El campo ${campo} no puede tener mas de ${n} caracteres`,id );
 
-    mostrarTextoError("Nombre", nombre.value);
-    
+}
 
-    
-})
+
+function crearElementoError(campo, texto, id) {
+
+    var campoSeleccionado = document.querySelector(`#${campo}`);
+    var parrafo = document.createElement("p");
+    parrafo.className = "error";
+    parrafo.textContent = texto;
+    parrafo.id = id;
+    campoSeleccionado.insertAdjacentElement("beforebegin", parrafo);
+
+
+}
+
+function borrarElemento(id){
+
+
+   var elemento = document.querySelector(`#${id}`);
+   elemento.remove();
+
+}
+
 
 
 
