@@ -8,6 +8,7 @@ class Error {
 var nombreError = new Error();
 var asuntoError = new Error();
 var mensajeError = new Error();
+var emailError = new Error();
 
 
 function validarLongitud(palabra,n) {
@@ -40,6 +41,12 @@ function validarVacio(palabra) {
 function mostrarTextoErrorVacio(campo,id) {
 
     crearElementoError(campo, `El campo ${campo} no puede estar vacío`,id);
+
+}
+
+function mostrarTextoErrorEmail(campo,id) {
+
+    crearElementoError(campo, `El campo ${campo} debe tener la siguiente estructura: usuario@dominio.com`,id);
 
 }
 
