@@ -28,7 +28,7 @@ email.addEventListener("keyup", function (evento) {
         }
     } else {
 
-        if (validarEntrada(evento.keyCode)){
+        if (validarEntrada(evento.key)){
             borrarElemento("error-emailVacio");
             emailError.vacio = false;
         }    

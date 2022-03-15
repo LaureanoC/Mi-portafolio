@@ -14,7 +14,7 @@ if(this.keylock)
 
         }
     } else {
-        if (validarEntrada(evento.keyCode)){
+        if (validarEntrada(evento.key)){
             borrarElemento("error-mensajeVacio");
             mensajeError.vacio = false;
         }

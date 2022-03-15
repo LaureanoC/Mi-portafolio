@@ -14,7 +14,7 @@ asunto.addEventListener("keyup", function (evento) {
         }
     } else {
 
-        if (validarEntrada(evento.keyCode)){
+        if (validarEntrada(evento.key)){
 
             borrarElemento("error-asuntoVacio");
             asuntoError.vacio = false;

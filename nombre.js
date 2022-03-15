@@ -3,7 +3,7 @@ var nombre = document.querySelector("#nombre-apellido");
 nombre.addEventListener("keyup", function (evento) {
 
     // console.log(`Contenido del nombre: ${nombre.value} `);
-
+    console.log(evento.key);
 
     if (nombreError.vacio == false) {
 
@@ -15,7 +15,7 @@ nombre.addEventListener("keyup", function (evento) {
         }
     } else {
 
-        if (validarEntrada(evento.keyCode)){
+        if (validarEntrada(evento.key)){
 
             borrarElemento("error-nombreVacio");
             nombreError.vacio = false;
