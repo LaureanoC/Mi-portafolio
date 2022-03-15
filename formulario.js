@@ -2,38 +2,21 @@ class Error {
     constructor() {
         this.vacio = false;
         this.longitud = false;
-        
+        this.estado = false;
+
     }
 }
+
+
+
+
 
 var nombreError = new Error();
 var asuntoError = new Error();
 var mensajeError = new Error();
 var emailError = new Error();
-var estadoFormulario = false;
 
-
-function habilitarBoton(){
-
-    var boton = document.querySelector(".boton-enviarDeshabilitado");
-    boton.classList.remove("boton-enviarDeshabilitado");
-    boton.classList.add("boton-enviar");
-    boton.setAttribute("value","regular");
-    boton.removeAttribute("disabled");
-
-}
-
-function deshabilitarBoton (){
-    
-    var boton = document.querySelector(".boton-enviar");
-    boton.classList.remove("boton-enviar");
-    boton.classList.add("boton-enviarDeshabilitado");
-    boton.setAttribute("value", "disabled");
-    boton.setAttribute("disabled", "");
-
-}
-
-function validarLongitud(palabra,n) {
+function validarLongitud(palabra, n) {
 
     if (palabra.length <= n) {
 
@@ -59,21 +42,21 @@ function validarVacio(palabra) {
     }
 }
 
-function mostrarTextoErrorVacio(campo,id) {
+function mostrarTextoErrorVacio(campo, id) {
 
-    crearElementoError(campo, `El campo ${campo} no puede estar vacío`,id);
-
-}
-
-function mostrarTextoErrorEmail(campo,id) {
-
-    crearElementoError(campo, `El campo ${campo} debe tener la siguiente estructura: usuario@dominio.com`,id);
+    crearElementoError(campo, `El campo ${campo} no puede estar vacío`, id);
 
 }
 
-function mostrarTextoErrorLongitud(campo,id,n) {
+function mostrarTextoErrorEmail(campo, id) {
 
-    crearElementoError(campo, `El campo ${campo} no puede tener mas de ${n} caracteres`,id );
+    crearElementoError(campo, `El campo ${campo} debe tener la siguiente estructura: usuario@dominio.com`, id);
+
+}
+
+function mostrarTextoErrorLongitud(campo, id, n) {
+
+    crearElementoError(campo, `El campo ${campo} no puede tener mas de ${n} caracteres`, id);
 
 }
 
@@ -90,11 +73,11 @@ function crearElementoError(campo, texto, id) {
 
 }
 
-function borrarElemento(id){
+function borrarElemento(id) {
 
 
-   var elemento = document.querySelector(`#${id}`);
-   elemento.remove();
+    var elemento = document.querySelector(`#${id}`);
+    elemento.remove();
 
 }
 

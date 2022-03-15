@@ -5,13 +5,24 @@ console.log(regEmail.test("laau262@gmail"));
 var email = document.querySelector("#email");
 email.addEventListener("keyup", function () {
 
-    console.log(`Contenido del email: ${email.value}`);
+    //  console.log(`Contenido del email: ${email.value}`);
 
-    if (emailError.vacio == false){
 
-        if(validarVacio(email.value)){
+    if ((emailError.longitud == false) && (asuntoError.vacio == false)) {
 
-            mostrarTextoErrorVacio("email","error-emailVacio");
+        emailError.estado = true;
+
+    } else {
+
+        emailError.estado = false;
+    }
+
+
+    if (emailError.vacio == false) {
+
+        if (validarVacio(email.value)) {
+
+            mostrarTextoErrorVacio("email", "error-emailVacio");
             emailError.vacio = true;
 
         }
@@ -19,42 +30,47 @@ email.addEventListener("keyup", function () {
 
         borrarElemento("error-emailVacio");
         emailError.vacio = false;
-        
+
     }
 
-    if (emailError.longitud == false){
+    if (emailError.longitud == false) {
 
-        if(validarLongitud(email.value,256)== false){
+        if (validarLongitud(email.value, 256) == false) {
 
-            mostrarTextoErrorLongitud("email","error-emailLongitud",256);
+            mostrarTextoErrorLongitud("email", "error-emailLongitud", 256);
             emailError.longitud = true;
         }
-        
-        } else if (validarLongitud(email.value,256)){
-            borrarElemento("error-emailLongitud");
-            emailError.longitud = false;
-               
+
+    } else if (validarLongitud(email.value, 256)) {
+        borrarElemento("error-emailLongitud");
+        emailError.longitud = false;
+
     }
 
-    console.log(`Estado mail: ${estadoEmail} y test: ${regEmail.test(email.value)}`);
-    if (estadoEmail == false){
+    if (estadoEmail == false) {
 
-        if(regEmail.test(email.value)== false) {
+        if (regEmail.test(email.value) == false) {
 
-            mostrarTextoErrorEmail("email","error-emailReg");
+            mostrarTextoErrorEmail("email", "error-emailReg");
             estadoEmail = true;
         }
 
     }
-     console.log(regEmail.test(email.value));
-     console.log(estadoEmail);
 
-    if (regEmail.test(email.value) && (estadoEmail)){
+
+    if (regEmail.test(email.value) && (estadoEmail)) {
 
         borrarElemento("error-emailReg");
-        console.log("SE BORRA?");
         estadoEmail = false;
+        emailError.estado = true;
 
+    } else {
+
+        emailError.estado = false;
     }
+
+    // console.log(`Longitud: ${emailError.longitud} Vacio: ${emailError.vacio} Mail: ${estadoEmail} Estado final: ${emailError.estado}`);
+
+    verificarEstado();
 
 })

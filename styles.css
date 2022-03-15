@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 html {
     background-color: #F5F5F5;
     scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
-    color:#464646;  
-   
+    color: #464646;
+
 }
 
 /*1 rem 16 px*/
@@ -28,47 +29,47 @@ html {
     margin-top: 1rem;
     padding: 1rem;
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
 
 .menu-principal {
 
-    margin-left:auto;
-    display:flex;
-    gap:1rem;
- }
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+}
 
 .nombre::before {
-     
+
     font-weight: 500;
     content: "Laureano Neyén Chaves";
 }
 
 .nombre-header {
 
-    display:flex;
+    display: flex;
     align-items: center;
-    gap:0.5rem;
+    gap: 0.5rem;
 }
 
 .nombre {
-    
-    font-size:1rem;
+
+    font-size: 1rem;
 }
 
 .nav-text {
 
     text-decoration: none;
     font-weight: 500;
-    color:#464646;
-    
+    color: #464646;
+
 }
 
 
 
 .nav-text:visited {
 
-    color:#464646;
+    color: #464646;
 
 }
 
@@ -77,24 +78,25 @@ html {
     width: 65%;
     max-width: 1920px;
     margin: 0 auto;
-    margin-top: 2rem;;
+    margin-top: 2rem;
+    ;
     display: flex;
-    flex-flow:column wrap;
-        
+    flex-flow: column wrap;
+
 }
 
 .container-titulo {
-    display:flex;
+    display: flex;
     margin: 3rem auto;
     align-items: center;
-    justify-content:center;
-     
+    justify-content: center;
+
 }
 
 .container-titulo h1 {
 
-    font-size:3.25rem;
-    line-height:3.815625rem;
+    font-size: 3.25rem;
+    line-height: 3.815625rem;
     font-weight: 800;
 
 }
@@ -103,9 +105,9 @@ html {
 
     width: 20rem;
     height: 20rem;
-    border-radius:20rem;
+    border-radius: 20rem;
 
-    }
+}
 
 .parrafo-perfil {
 
@@ -117,21 +119,21 @@ html {
 
 .container-redes {
 
-    display:flex;
-    gap:1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .container-descripcion {
 
-    display:flex;
+    display: flex;
     flex-direction: column;
-    gap:2.5rem;
+    gap: 2.5rem;
 }
 
 
 .container-sobre-mi {
 
-    padding:4rem 0;
+    padding: 4rem 0;
     background-color: #EAF2FD;
 }
 
@@ -148,10 +150,11 @@ html {
     font-size: 1.7rem;
     margin-bottom: 1rem;
 }
+
 .subtitulo i {
 
 
-    margin-left:0.7rem;
+    margin-left: 0.7rem;
 }
 
 .biografia {
@@ -161,89 +164,90 @@ html {
 
 .conjunto-skills, .conjunto-hobbies {
 
-    display:flex;
-    gap:1rem;
+    display: flex;
+    gap: 1rem;
 
-} 
+}
 
 .container-skills .subtitulo, .container-hobbies .subtitulo, .container-formacion .subtitulo, .container-proyectos .subtitulo {
 
     text-align: center;
-    padding:2rem;
+    padding: 2rem;
     margin: 0;
 
 }
-.cuadrado{
- 
-    background-color:white;
-    flex-basis:50%;
+
+.cuadrado {
+
+    background-color: white;
+    flex-basis: 50%;
     padding: 1rem 0;
-    font-size:4rem;
+    font-size: 4rem;
     color: #2A7AE4;
-    text-align:center;
+    text-align: center;
     border-radius: 1rem;
 
 }
 
 .cuadrado-descripcion {
 
-    font-size:1rem;
-    color:#464646;
+    font-size: 1rem;
+    color: #464646;
     font-weight: 700;
     margin: 0.5rem 0;
-    
+
 }
 
 .container-formacion {
 
-   
+
     background-color: #EAF2FD;
-    padding:2rem 0;
+    padding: 2rem 0;
     margin-top: 3rem;
-    
+
 }
 
 .conjunto-formacion {
 
     display: flex;
     flex-flow: 1 0;
-    gap:1rem;
+    gap: 1rem;
 }
 
 .logo {
-    
-    width:12rem;
-    height:8.125rem;
+
+    width: 12rem;
+    height: 8.125rem;
 }
 
 .cuadrado-texto {
 
-    flex-basis:50%;
+    flex-basis: 50%;
 }
 
 .imagen-proyecto {
 
-    width:47rem;
+    width: 47rem;
     height: 25.375rem;
 
 }
 
 .conjunto-imagen-botones {
 
-    display:flex;
-    gap:1rem;
+    display: flex;
+    gap: 1rem;
     align-items: center;
     padding: 2rem 0;
-    
+
 }
 
 .conjunto-titulo-descripcion-botones {
 
-    display:flex;
+    display: flex;
     flex-direction: column;
-    margin:auto;
-    
-    
+    margin: auto;
+
+
 }
 
 .subtitulo2 {
@@ -253,79 +257,77 @@ html {
 
 .descripcion-subtitulo2 {
 
-    margin-bottom:1.7rem;
+    margin-bottom: 1.7rem;
 }
 
 .boton-repositorio {
 
-    cursor:pointer;
+    cursor: pointer;
     border: solid 0.15rem #2a7ae4;
-    padding:0.6rem;
-    font-size:1.4rem;
-    color:#2A7AE4;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    color: #2A7AE4;
     text-decoration: none;
-   
+
 }
 
 .boton-ver, .boton-enviar {
 
-    cursor:pointer;
+    cursor: pointer;
     border: solid 0.15rem #2a7ae4;
-    padding:0.6rem;
-    font-size:1.4rem;
-    color:whitesmoke;
-    background-color:#2A7AE4;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    color: whitesmoke;
+    background-color: #2A7AE4;
     text-decoration: none;
 }
 
 .boton-ver:hover, .boton-enviar:hover {
 
 
-    color:whitesmoke;
-    background-color:#372AE4;
+    color: whitesmoke;
+    background-color: #372AE4;
     border-color: #372AE4;
-    transition:1s;
+    transition: 1s;
 }
 
 .boton-enviarDeshabilitado {
 
-    color:whitesmoke;
-    border: solid 0.15rem #665deb;
-    padding:0.6rem;
-    font-size:1.4rem;
-    background-color: #665deb;
+    color: whitesmoke;
+    border: solid 0.15rem #99bbe7;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    background-color: #99bbe7;
 
 }
 
 .boton-repositorio:hover {
 
     border-color: #372AE4;
-    color:#372AE4;
-    transition:1s;
+    color: #372AE4;
+    transition: 1s;
 
 
 }
 
-
-
 .conjunto-botones {
 
     display: flex;
-   
-    gap:1rem;
+
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .fondo-formulario-contacto {
 
     padding: 7rem 0 4rem 0;
-    background-color:#EAF2FD;
+    background-color: #EAF2FD;
 }
 
 .imagen-formulario {
 
-    width:29rem;
-    height:37.0625rem;
+    width: 29rem;
+    height: 37.0625rem;
 }
 
 .container-contacto {
@@ -333,10 +335,11 @@ html {
     width: 65%;
     max-width: 1920px;
     margin: 0 auto;
-    margin-top: 2rem;;
+    margin-top: 2rem;
+    ;
     display: flex;
-    gap:1rem;
-    
+    gap: 1rem;
+
 }
 
 .conjunto-formulario {
@@ -346,30 +349,30 @@ html {
 
 .grupo-form {
 
-display:flex;
-flex-direction:column;
-background-color:white;
-margin:1rem 0;
-border-radius:0.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
 
 }
 
 .label {
 
-    font-size:0.7rem;
-    padding: 0.5rem; 
+    font-size: 0.7rem;
+    padding: 0.5rem;
 }
 
 .input-form {
 
-   font-size:1.25rem;
-   padding: 0.5rem 0.5rem;
-   border:none;
-   border-bottom: solid 0.15rem grey;
-   outline:none;
-   font-family: 'Raleway', sans-serif;
-   color:black; 
- 
+    font-size: 1.25rem;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    border-bottom: solid 0.15rem grey;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+
 }
 
 .input-form:focus {
@@ -379,22 +382,22 @@ border-radius:0.5rem;
 
 .mensaje-form {
 
-    outline:none;
+    outline: none;
     border: none;
     border-bottom: solid 0.15rem grey;
-    height:8rem;
+    height: 8rem;
     padding: 0.5rem 0.5rem;
     font-family: 'Raleway', sans-serif;
     font-size: 1.15rem;
-    color:black;  
+    color: black;
     resize: none;
-    
+
 }
 
 .mensaje-form:focus {
 
-   border-color: #2A7AE4;
-   
+    border-color: #2A7AE4;
+
 }
 
 
@@ -402,17 +405,18 @@ border-radius:0.5rem;
 
 .fondo-footer {
 
-    padding:2rem 2rem 3rem 2rem;
+    padding: 2rem 2rem 3rem 2rem;
     background-color: white;
 }
+
 .footer-text {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    color:#464646;
+    color: #464646;
     font-size: 1.15rem;
     font-weight: 500;
     font-size: 1.5rem;
-   
+
 }
 
 .error {
@@ -426,60 +430,62 @@ border-radius:0.5rem;
 
 @media (min-width:451px) and (max-width:768px) {
 
-       
+
     html {
 
-        font-size:8px;
+        font-size: 8px;
     }
 
 
-      .container-main, .seccion-sobre-mi, .container-skills, .container-hobbies, .seccion-formacion, .container-proyectos, .container-footer {
+    .container-main, .seccion-sobre-mi, .container-skills, .container-hobbies, .seccion-formacion, .container-proyectos, .container-footer {
 
-        width:90%;
+        width: 90%;
 
     }
-    
+
     .parrafo-perfil {
 
-        font-size:1.5rem;
-        line-height:2rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
+
     .biografia {
 
-        font-size:1.4rem;
-        line-height:2rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
     }
 
 }
 
 @media (max-width: 450px) {
 
-     html {
+    html {
 
-        font-size:6px;
+        font-size: 6px;
     }
 
 
-      .container-main, .seccion-sobre-mi, .container-skills, .container-hobbies, .seccion-formacion, .container-proyectos, .container-footer {
+    .container-main, .seccion-sobre-mi, .container-skills, .container-hobbies, .seccion-formacion, .container-proyectos, .container-footer {
 
-        width:90%;
+        width: 90%;
 
     }
 
     .parrafo-perfil {
 
-        font-size:2rem;
-        line-height:2.5rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
+
     .biografia {
 
-        font-size:1.8rem;
-        line-height:2.5rem;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
     }
 
     .container-descripcion h1 {
 
-        font-size:3rem;
+        font-size: 3rem;
     }
 
     .conjunto-imagen-botones {
@@ -488,72 +494,72 @@ border-radius:0.5rem;
 
     }
 
-    .cuadrado-descripcion, .descripcion-subtitulo2{
+    .cuadrado-descripcion, .descripcion-subtitulo2 {
 
-        font-size:1.35rem;
+        font-size: 1.35rem;
     }
 
     .fecha {
 
-        font-size:1.2rem;
-        line-height:1.9rem;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
     }
-  
-    .imagen-proyecto{
 
-        width:100%;
+    .imagen-proyecto {
+
+        width: 100%;
     }
 
     .conjunto-titulo-descripcion-botones {
 
-        flex-basis:100%;
-        order:2;
+        flex-basis: 100%;
+        order: 2;
     }
 
     .boton-ver, .boton-enviar, .boton-repositorio {
 
 
-        font-size:1.45rem;
+        font-size: 1.45rem;
     }
 
 
 
-  
-  .imagen-formulario {
 
-      display:none;
-  }
+    .imagen-formulario {
+
+        display: none;
+    }
 
 
     .container-header {
 
-        width:90%;
-        font-size:1.1rem;
-        margin:1auto;
+        width: 90%;
+        font-size: 1.1rem;
+        margin: 1auto;
 
     }
 
-    .container-main{
+    .container-main {
 
         margin: 5rem auto;
     }
 
-    .menu-principal{
+    .menu-principal {
 
-        margin-left:2rem;
+        margin-left: 2rem;
     }
 
     .nombre {
 
-        font-size:0;
+        font-size: 0;
 
     }
 
     .nombre-header i {
 
-        font-size:3rem;
+        font-size: 3rem;
 
-}
-   
+    }
+
 
 }
