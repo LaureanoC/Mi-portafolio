@@ -3,7 +3,7 @@ var estadoEmail = false;
 console.log(regEmail.test("laau262@gmail"));
 
 var email = document.querySelector("#email");
-email.addEventListener("keyup", function () {
+email.addEventListener("keyup", function (evento) {
 
     //  console.log(`Contenido del email: ${email.value}`);
 
@@ -28,9 +28,10 @@ email.addEventListener("keyup", function () {
         }
     } else {
 
-        borrarElemento("error-emailVacio");
-        emailError.vacio = false;
-
+        if (validarEntrada(evento.keyCode)){
+            borrarElemento("error-emailVacio");
+            emailError.vacio = false;
+        }    
     }
 
     if (emailError.longitud == false) {

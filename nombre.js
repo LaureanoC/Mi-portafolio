@@ -1,8 +1,13 @@
 
 var nombre = document.querySelector("#nombre-apellido");
-nombre.addEventListener("keyup", function () {
+nombre.addEventListener("keyup", function (evento) {
 
+    console.log(`El input vacio: ${validarVacio(this.value)} y letra valida: ${validarEntrada(evento.keyCode)}`);
+
+    
+   
     // console.log(`Contenido del nombre: ${nombre.value} `);
+
 
     if (nombreError.vacio == false) {
 
@@ -14,8 +19,12 @@ nombre.addEventListener("keyup", function () {
         }
     } else {
 
-        borrarElemento("error-nombreVacio");
-        nombreError.vacio = false;
+        if (validarEntrada(evento.keyCode)){
+
+            borrarElemento("error-nombreVacio");
+            nombreError.vacio = false;
+        }
+
     }
 
     if (nombreError.longitud == false) {

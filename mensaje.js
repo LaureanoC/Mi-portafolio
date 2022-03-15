@@ -1,5 +1,7 @@
 var mensaje = document.querySelector("#mensaje");
-mensaje.addEventListener("keyup", function () {
+mensaje.addEventListener("keyup", function (evento) {
+
+if(this.keylock)
 
     console.log(`Contenido del mensaje: ${mensaje.value} `);
 
@@ -12,9 +14,10 @@ mensaje.addEventListener("keyup", function () {
 
         }
     } else {
-
-        borrarElemento("error-mensajeVacio");
-        mensajeError.vacio = false;
+        if (validarEntrada(evento.keyCode)){
+            borrarElemento("error-mensajeVacio");
+            mensajeError.vacio = false;
+        }
     }
 
     if (mensajeError.longitud == false) {

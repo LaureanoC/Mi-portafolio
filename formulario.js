@@ -29,6 +29,18 @@ function validarLongitud(palabra, n) {
     }
 }
 
+function validarEntrada(letra){
+
+    if((letra > 63) && (letra < 91) && (letra != 20) && (letra != 8)){
+
+        return true;
+
+    }
+    else {
+
+        return false;
+    }
+}
 
 function validarVacio(palabra) {
 

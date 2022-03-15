@@ -1,5 +1,5 @@
 var asunto = document.querySelector("#asunto");
-asunto.addEventListener("keyup", function () {
+asunto.addEventListener("keyup", function (evento) {
 
     console.log(`Contenido del asunto: ${asunto.value} `);
 
@@ -14,9 +14,11 @@ asunto.addEventListener("keyup", function () {
         }
     } else {
 
-        borrarElemento("error-asuntoVacio");
-        asuntoError.vacio = false;
+        if (validarEntrada(evento.keyCode)){
 
+            borrarElemento("error-asuntoVacio");
+            asuntoError.vacio = false;
+        }
 
     }
 
