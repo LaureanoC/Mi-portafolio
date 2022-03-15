@@ -8,9 +8,6 @@ class Error {
 }
 
 
-
-
-
 var nombreError = new Error();
 var asuntoError = new Error();
 var mensajeError = new Error();
@@ -31,7 +28,7 @@ function validarLongitud(palabra, n) {
 
 function validarEntrada(letra){
 
-    if((letra > 63) && (letra < 91) && (letra != 20) && (letra != 8)){
+    if((letra > 64) && (letra < 91) && (letra != 20)){
 
         return true;
 
@@ -39,7 +36,9 @@ function validarEntrada(letra){
     else {
 
         return false;
+
     }
+
 }
 
 function validarVacio(palabra) {
@@ -56,7 +55,7 @@ function validarVacio(palabra) {
 
 function mostrarTextoErrorVacio(campo, id) {
 
-    crearElementoError(campo, `El campo ${campo} no puede estar vacío`, id);
+    crearElementoError(campo, `El campo ${campo} debe contener letras`, id);
 
 }
 

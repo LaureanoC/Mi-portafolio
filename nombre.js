@@ -2,10 +2,6 @@
 var nombre = document.querySelector("#nombre-apellido");
 nombre.addEventListener("keyup", function (evento) {
 
-    console.log(`El input vacio: ${validarVacio(this.value)} y letra valida: ${validarEntrada(evento.keyCode)}`);
-
-    
-   
     // console.log(`Contenido del nombre: ${nombre.value} `);
 
 
