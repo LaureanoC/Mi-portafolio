@@ -19,6 +19,7 @@ email.addEventListener("keyup", function () {
 
         borrarElemento("error-emailVacio");
         emailError.vacio = false;
+        
     }
 
     if (emailError.longitud == false){

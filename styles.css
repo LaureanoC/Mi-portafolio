@@ -287,6 +287,16 @@ html {
     transition:1s;
 }
 
+.boton-enviarDeshabilitado {
+
+    color:whitesmoke;
+    border: solid 0.15rem #665deb;
+    padding:0.6rem;
+    font-size:1.4rem;
+    background-color: #665deb;
+
+}
+
 .boton-repositorio:hover {
 
     border-color: #372AE4;

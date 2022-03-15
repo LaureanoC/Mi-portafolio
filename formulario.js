@@ -2,6 +2,7 @@ class Error {
     constructor() {
         this.vacio = false;
         this.longitud = false;
+        
     }
 }
 
@@ -9,7 +10,28 @@ var nombreError = new Error();
 var asuntoError = new Error();
 var mensajeError = new Error();
 var emailError = new Error();
+var estadoFormulario = false;
 
+
+function habilitarBoton(){
+
+    var boton = document.querySelector(".boton-enviarDeshabilitado");
+    boton.classList.remove("boton-enviarDeshabilitado");
+    boton.classList.add("boton-enviar");
+    boton.setAttribute("value","regular");
+    boton.removeAttribute("disabled");
+
+}
+
+function deshabilitarBoton (){
+    
+    var boton = document.querySelector(".boton-enviar");
+    boton.classList.remove("boton-enviar");
+    boton.classList.add("boton-enviarDeshabilitado");
+    boton.setAttribute("value", "disabled");
+    boton.setAttribute("disabled", "");
+
+}
 
 function validarLongitud(palabra,n) {
 
@@ -23,7 +45,6 @@ function validarLongitud(palabra,n) {
         return false
     }
 }
-
 
 
 function validarVacio(palabra) {
