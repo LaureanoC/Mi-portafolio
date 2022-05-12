@@ -286,8 +286,8 @@ html {
 
 
     color: whitesmoke;
-    background-color: #372AE4;
-    border-color: #372AE4;
+    background-color: #2D435E;
+    border-color: #2D435E;
     transition: 1s;
 }
 
@@ -303,8 +303,8 @@ html {
 
 .boton-repositorio:hover {
 
-    border-color: #372AE4;
-    color: #372AE4;
+    border-color: #2D435E;
+    color: #2D435E;
     transition: 1s;
 
 
